@@ -37,7 +37,8 @@ def instructions_page():
     fourth = 'Download version 2 if you want drowsiness detection plus interaction (ADD+).'
     fifth = 'Open the file.'
     sixth = 'If it shows the picture below, then click “More info”, then click “Run anyway”.'
-    return render_template("pages/instructions.html", first=first, second=second, third=third, fourth=fourth, fifth=fifth, sixth=sixth, windows_defender=windows_defender)
+    seventh = 'The desktop app will be installed and then you can use it.'
+    return render_template("pages/instructions.html", first=first, second=second, third=third, fourth=fourth, fifth=fifth, sixth=sixth, seventh=seventh, windows_defender=windows_defender)
 
 
 @app.route("/troubleshoot")
@@ -51,4 +52,4 @@ def why_page():
 
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)
