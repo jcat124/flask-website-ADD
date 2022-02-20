@@ -11,16 +11,22 @@ app.config['UPLOAD_FOLDER'] = DROWSY_FOLDER
 
 @app.route("/")
 def home_page():
+    home_image = os.path.join(
+        app.config['UPLOAD_FOLDER'], 'home_image.png')
     ADDPlus_icon = os.path.join(
         app.config['UPLOAD_FOLDER'], 'icon.png')
-    return render_template("index.html", ADDPlus_icon=ADDPlus_icon)
+    return render_template("index.html", ADDPlus_icon=ADDPlus_icon,
+                           home_image=home_image)
 
 
 @app.route("/about")
 def about_page():
     ADDPlus_icon = os.path.join(
         app.config['UPLOAD_FOLDER'], 'icon.png')
-    return render_template("pages/about.html", ADDPlus_icon=ADDPlus_icon)
+    about_image = os.path.join(
+        app.config['UPLOAD_FOLDER'], 'about_image.png')
+    return render_template("pages/about.html", ADDPlus_icon=ADDPlus_icon,
+                           about_image=about_image)
 
 
 @app.route("/download")
@@ -32,9 +38,12 @@ def download_page():
 
 @app.route("/how")
 def how_page():
+    how_image = os.path.join(
+        app.config['UPLOAD_FOLDER'], 'how_image.png')
     ADDPlus_icon = os.path.join(
         app.config['UPLOAD_FOLDER'], 'icon.png')
-    return render_template("pages/how.html", ADDPlus_icon=ADDPlus_icon)
+    return render_template("pages/how.html", ADDPlus_icon=ADDPlus_icon,
+                           how_image=how_image)
 
 
 @app.route("/instructions")
@@ -81,9 +90,13 @@ def instructions_page():
 
 @app.route("/troubleshoot")
 def troubleshoot_page():
+    troubleshoot_image = os.path.join(
+        app.config['UPLOAD_FOLDER'], 'troubleshoot_image.png')
     ADDPlus_icon = os.path.join(
         app.config['UPLOAD_FOLDER'], 'icon.png')
-    return render_template("pages/troubleshoot.html", ADDPlus_icon=ADDPlus_icon)
+
+    return render_template("pages/troubleshoot.html", ADDPlus_icon=ADDPlus_icon,
+                           troubleshoot_image=troubleshoot_image)
 
 
 @app.route("/why")
@@ -99,4 +112,4 @@ def why_page():
 
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)
