@@ -100,35 +100,9 @@ span {
     color: white;
 }
 
-/* .pictures {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    /* text-align: center; */
-    /* padding-top: 100px;
-    padding-bottom: 150px;
+img {
+    color: lightblue;
 }
-
-.collide-pic {
-    height: 120px;
-    width: 1350px;
-    /* text-align: center; */
-    /* align-items: center;
-    line-height: 120px;
-    background-color: grey;
-    border: 2px solid rgb(255, 0, 0);
-} */
-
-/* .collide-pic1 {
-    height: 120px;
-    width: 3000px; */
-    /* text-align: center; */
-    /* align-items: center;
-    line-height: 120px;
-    background-color: grey;
-    border: 2px solid black;
-} */
 
 p {
     padding-left: 400px;
@@ -136,4 +110,16 @@ p {
     padding-top: 40px;
     padding-bottom: 50px;
     font-style: Arial, sans-serif;
+}
+
+ol li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 300px;
+    padding-right: 320px;
+}
+
+ol li h2 {
+    font-size: 2em;
+    padding-top: 40px;
 }

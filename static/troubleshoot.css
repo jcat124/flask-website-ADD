@@ -130,10 +130,27 @@ span {
     border: 2px solid black;
 } */
 
-p {
+/* .space {
     padding-left: 400px;
     padding-right: 400px;
     padding-top: 40px;
     padding-bottom: 50px;
     font-style: Arial, sans-serif;
+} */
+
+/* a {
+    padding-left: 100px;
+    font-style: Arial, sans-serif;
+} */
+
+p {
+    padding-left: 100px;
+}
+
+a {
+    padding-left: 100px;
+}
+
+h1 {
+    padding-top: 100px;
 }
