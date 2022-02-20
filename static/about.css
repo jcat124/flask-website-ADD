@@ -85,7 +85,7 @@ nav ul li ul li a:hover {
     background-color: rgb(83, 79, 79);
 }
 
-div {
+h1 {
     display: table;
     height: 75px;
     width: 100%;
@@ -96,44 +96,28 @@ div {
 span {
     display: table-cell;
     vertical-align: middle;
-    font-size: 2.5em;
+    font-size: 1.3em;
     color: white;
 }
 
-/* .pictures {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    /* text-align: center; */
-    /* padding-top: 100px;
-    padding-bottom: 150px;
+h4 {
+    padding-top: 100px;
 }
 
-.collide-pic {
-    height: 120px;
-    width: 1350px;
-    /* text-align: center; */
-    /* align-items: center;
-    line-height: 120px;
-    background-color: grey;
-    border: 2px solid rgb(255, 0, 0);
-} */
-
-/* .collide-pic1 {
-    height: 120px;
-    width: 3000px; */
-    /* text-align: center; */
-    /* align-items: center;
-    line-height: 120px;
-    background-color: grey;
-    border: 2px solid black;
-} */
-
-p {
+.about_body {
     padding-left: 400px;
     padding-right: 400px;
     padding-top: 40px;
     padding-bottom: 50px;
-    font-style: Arial, sans-serif;
+    font-family: system-ui;
+    font-size: 1.1em;
+}
+
+.about_img {
+    padding-top: 55px;
+    text-align: center;
+}
+
+.about_par {
+    padding-bottom: 20px;
 }
