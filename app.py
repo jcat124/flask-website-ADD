@@ -1,7 +1,7 @@
 from flask import Flask, url_for, render_template
 import os
 # from PIL import Image
-import cv2
+# import cv2
 
 DROWSY_FOLDER = os.path.join('static', 'img')
 
