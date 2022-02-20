@@ -1,29 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="../../static/how.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="{{ ADDPlus_icon }}"/>
     <title>How</title>
 </head>
 <body>
     <nav>
-        <p><a href="/">Anti Drowsy Driving</a></p>
+        <img src="{{ ADDPlus_icon }}" alt="drowsy_icon">
+        <p><a href="/"><strong>Anti-Drowsy Driving Plus (ADD+)</strong></a></p>
+        
         <ul>
-            <li><a href="/">Home ▼</a>
+            <li><strong><a href="/">Home ▼</a></strong>
             <ul>
-                    <li><a href="/troubleshoot">Troubleshoot</a></li>
-                    <li><a href="/instructions">Instructions</a></li>
-                    <li><a href="/download">Download</a></li>
-                </ul>
+                    <li><strong><a href="/troubleshoot">Troubleshoot</a></strong></li>
+                    <li><strong><a href="/instructions">Instructions</a></strong></li>
+                    <li><strong><a href="/download">Download</a></strong></li>
+            </ul>
             </li>
-            <li><a href="/why">Why</a></li>
-            <li><a href="/how">How</a></li>
-            <li><a href="/about">About</a></li>
+            <li><strong><a href="/why">Why</a></strong></li>
+            <li><strong><a href="/how">How</a></strong></li>
+            <li><strong><a href="/about">About</a></strong></li>
         </ul>
     </nav>
-    
-    <h1>How</h1>
+    <p>
+        
+    </p>
+    <div>
+        <span><b>HOW</b></span>
+    </div>
+
+    <p>
+        I started this project around a year ago. Without any prior knowledge of coding/ programming, I started learning from scratch. I taught myself from online research and tutorials, and I also took a couple of free online Harvard University courses during my summer holidays. For many months in the beginning, I faced dozens of failed attempts only—I tried arduino, started learning Javascript and react-native, tried color detection etc., but nothing was working at all. But, I kept working hard and stayed persistent. It took me 5-6 months to see a glimpse of my first success.
+
+        For my project:
+        I created a desktop app: Anti-Drowsy Driving Plus (ADD+)
+        I taught myself python programming language and learned to make my first desktop app using python
+        I also created a website: https://anti-drowsy-driving-plus.herokuapp.com/
+        I self learned HTML and CSS to make my first website so that people can download and use my app for free.
+
+        I used the following python libraries for my project:
+        Pyttxs3 (to use the speaker and say things from the computer)
+        Dlib (a pre-trained model—----- to detect facial landmarks e.g. eyes, nose, mouth, etc.)
+        Opencv (to use the webcam and draw green circles around eyes, computer vision)
+        Winsound (to play sound and beeps when the person is drowsy)
+        imutils (to resize, crop and adjust pictures)
+        Speech_recognition (to access the microphone and convert speech to text (I used google speech api to convert speech to text, speech recognition library is just a way to form a bridge between python and google speech api)----------------------
+        pyaudio (to access the microphone, required by speech_recognition library)-----got major error with python and convert .py to .exe
+        Pyinstaller (to turn to desktop application)
+        random(generate a random integer to fetch random Q&A and jokes from 250 line .txt files)
+        From scipy.spatial—I used distance (to use in the eye aspect ratio (EAR) algorithm)
+
+        There are two versions of my app based on user/ driver’s needs and preferences:
+        Drowsiness Detection: When the driver is drowsy—either shutting eyes or yawning, my app sounds an alarm rightaway to alert the driver.
+        Interaction: I invented a virtual friend/ speech-robot that can talk to you when you feel drowsy, to help you stay awake because data shows that most of the road accidents occur when the driver is alone in their vehicle, on quiet rural roads and highways.[16,18] 
+
+        1). Drowsiness Detection: 
+        My code/ program detects facial landmarks (mouth, nose, eyes, lips) on a person's face, then I feed the facial landmarks (eyes and mouth) in the algorithm. My program also draws green dots/ lines around the eyes and mouth to let the user know if they were properly detected, so the user can understand how it works and feel more protected instead of knowing nothing about it. Greyscale—--face detect—--to-numpy-array
+
+        I used the Eye Aspect Ratio (EAR) and Mouth Aspect Ratio (MAR) algorithm [21,22,--] which gives you a real-time number that changes every millisecond, but then I coded it to detect drowsiness. As shown below, the EAR algorithm marks 6 points (P₁ to P₆) around the eye, and according to the following formula, it calculates driver’s real-time ‘EAR value’ every millisecond continuously. This EAR value ranges from around 0.05 to 0.25, and it changes according to your eyelids closing or opening. Obviously, EAR (open eye) > EAR (close eye). When EAR > 0.2, it means that the eyes are open and the driver is not drowsy; and when EAR < 0.1, the eyes are close, and it may be due to blinking or drowsiness depending on how long the eyes are close for—if it’s just for a fraction of a second, then it’s blinking, but if it’s closed for longer, that is around 1-3 seconds, then it’s drowsiness. But, there is no timer running alongside, so to know for how long the eyes are closed for, I declared a ‘flagCOUNTER—----’ variable. The initial —-----flag/counter value was 0, and each time a close eye is detected, it increments the flag/counter—--- by 1, and when the flag/counter—---- value reaches 20 (that is the eyes are closed for 1-3 seconds), it sends out an alert alarm to wake up the driver. In my code/program, I set a threshold for EAR = 0.25 to detect the drowsiness right away. If the EAR < 0.25 threshold continuously for 20 consecutive pictures/ frames, then my app sounds an alarm to alert the driver. And the flag/counter—--- value is reset back to 0 each time.
+
+        Like eyes, in the exact same way as stated above, my code also simultaneously monitors driver’s mouth and detects drowsiness by detecting yawning, and alerts the driver with an alarm sound. And the whole code runs in infinite loops until the user close the application by pressing “e” (to exit app).-----
+
+
+        2). Interaction: 
+        After sounding an alert alarm when the driver is drowsy, the virtual friend/ speech-robot—that I invented—suggests the driver to take a break, have some hot tea/ coffee etc., and also gives an option if the driver wants to talk to the virtual friend/ robot to help stay awake. If the driver wants to interact, my app asks 10 question-answers (Q-A) and jokes one-by-one from the set of 500 fun, interesting question-answers and jokes that I compiled from online.[reference] After that, my app asks if the driver wants to interact more—it’s in a loop.
+
+        The Q-A and jokes are delivered randomly so that each has an equal chance of occurring even when the trip is short. Because, when the driver’s trip is short—all Q-A and jokes can’t be delivered—and in that case if the Q-A and jokes were asked in an ascending order from 1 to 500, the driver will get to listen to only the first few Q-A and jokes everytime and can’t listen to the bottom set of Q-A and jokes, so I write the code so that Q-A and jokes are delivered randomly. 
+
+        The driver interacts by answering fun True or False (T/F) questions. Instead of the multiple-choice or short-answer questions that require more focus and concentration, I choose very short T/F questions because it’s very simple and fun and helps the driver stay awake and doesn’t provoke distracted driving.
+
+        This feature will help drivers stay more alert because 50% of drowsy driving accidents occur on certain, quiet rural roads and highways [18], mostly among drivers who are alone in their vehicles.[16] Being alone and not hearing any noises for a long time can make you feel drowsy. Driving alone or with sleeping passengers can dramatically increase the risk of an accident. So, my virtual friend/ speech robot invention will help drivers stay awake by interacting with them and giving them company.
+        —------speech recognition, text to speech,------ random etc—-- how?
+        Some CHALLENGES that I faced:
+
+        Code:
+
+        PyAudio:
+        I had problems installing the PyAudio library with pip (the default python package installer). After researching, I found that this problem can be overcome by installing the python binary packages according to your python version. After installing, you can find the path to the binary package and install PyAudio using pip.
+
+        Speech_Recognition.UnknownValueError():
+        I had errors with the speech_recognition library. When my app asks the user to say ‘yes’ or ‘no’, there could be a few different possibilities in which the user could respond. The user may say ‘yes’, or ‘no’, or both ‘yes’ and ‘no’ simultaneously, or can be just quiet, or say something else. So, instead of saying ‘yes’ or ‘no’ as asked, if the user responds in any other ways---it breaks the program. First, I tried to fix this by adding a ‘try’ and ‘except’. I added a try block and then put my whole code underneath it and then added an ‘except speech_recognition.UnknowValueError’. Underneath that exception, I added a 'pass' which basically just moves onto the next code---that is the drowsiness detector code. Finally, I changed the above code by saying ‘except Exception’ and ‘pass’, so then if there are any errors, it goes back to drowsiness detection.
+
+        Getting Random Q/A, Jokes:
+        I had a hard time fetching a random question with its corresponding answer because they were generated differently. I fixed this problem by generating a random integer; and after reading the questions, answers, and jokes file, I put them in strings in an array. After that, I store the random generated integer in a variable and assign it to questions array and answers array, so they are the same string, that is, the same line.
+
+
+        Making the App Public:
+
+        Pyinstaller (to make .exe file):
+        It was hard making the app. I had to convert it from .py to .exe file. The biggest challenge was that I couldn’t install PyAudio with the .exe file. I also couldn't install it on my local system, which I later resolved. I tried fixing it with hidden-import and installing PyAudio but it didn’t work. To fix the problem, I finally upgraded Pyinstaller to the latest version and typed the following command: 
+
+
+        Inno Setup and Bitbucket (to make setup wizard):
+        To make the setup wizard, I first used NSIS but it didn’t have the functionality I needed. After more researching, I came across Inno Setup and made my own Installer for my .exe file. The whole point of the setup wizard was to make it downloadable on other computers for free public use. The problem was that the setup wizard was 119 MB and github (the place where I stored my setup wizard) only allows files smaller than 25 MB. So, I used git lfs that allows you to store bigger files on Github. But still, the problem was that after I change some code in my .py file, I have to make the .exe file all over again and then feed that .exe file to the setup installer, compile it and then use git lfs to store it on Github. But, I can’t store it on Github anymore because I used all the bandwidth that my account provides to store files larger than 25 MB. So, I started looking for alternatives to Github, and I found Bitbucket. On Bitbucket, using Git Lfs, I could put as many large files I want without having to worry about bandwidth. After that, I just pasted the urls of my stored files onto my website so that other people can download it.
+    </p>
 </body>
 </html>

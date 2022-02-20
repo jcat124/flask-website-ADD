@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../../static/instructions.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="{{ ADDPlus_icon }}"/>
     <title>Instructions</title>
 </head>
 <body>
     <nav>
-        <p><a href="/">Anti Drowsy Driving</a></p>
+        <img src="{{ ADDPlus_icon }}" alt="drowsy_icon">
+        <p><a href="/"><strong>Anti-Drowsy Driving Plus (ADD+)</strong></a></p>
+        
         <ul>
-            <li><a href="/">Home ▼</a>
+            <li><strong><a href="/">Home ▼</a></strong>
             <ul>
-                    <li><a href="/troubleshoot">Troubleshoot</a></li>
-                    <li><a href="/instructions">Instructions</a></li>
-                    <li><a href="/download">Download</a></li>
-                </ul>
+                    <li><strong><a href="/troubleshoot">Troubleshoot</a></strong></li>
+                    <li><strong><a href="/instructions">Instructions</a></strong></li>
+                    <li><strong><a href="/download">Download</a></strong></li>
+            </ul>
             </li>
-            <li><a href="/why">Why</a></li>
-            <li><a href="/how">How</a></li>
-            <li><a href="/about">About</a></li>
+            <li><strong><a href="/why">Why</a></strong></li>
+            <li><strong><a href="/how">How</a></strong></li>
+            <li><strong><a href="/about">About</a></strong></li>
         </ul>
     </nav>
-    
-    <h1>INSTRUCTIONS</h1>
+    <p>
+        
+    </p>
+    <div>
+        <span><b>INSTRUCTIONS</b></span>
+    </div>
     <ol>
         <li>
             <h2>
@@ -32,63 +39,60 @@
             </h2>
         </li>
         <li>
-            1. {{ first }}
+            <b>1. {{ first }}</b>
         </li>
         <li>
-            2. {{ second }}
+            <b>2. {{ second }}</b>
         </li>
         <li>
-            3. {{ third }}
+            <b>3. {{ third }}</b>
         </li>
         <li>
-            4. {{ fourth }}
+            <b>4. {{ fourth }}</b>
         </li>
         <li>
-            5. {{ fifth }}
+            <b>5. {{ fifth }}</b>
         </li>
         <li>
-            6. {{ sixth }}
+            <b>6. {{ sixth }}</b>
         </li>
         <li>
-            <img src="{{ windows_defender }}" alt="windows_defender">
+            <div id="windows_defender">
+                <img src="{{ windows_defender }}" alt="windows_defender">
+            </div>
         </li>
         <li>
-            7. {{ seventh }}
-        </li>
-
-        <li>
-            <h2>How to use the App properly</h2>
+            <b>7. {{ seventh }}</b>
         </li>
 
         <li>
-            1. {{ proper_one }}
+            <h2>How to Use App Properly</h2>
+        </li>
+
+        <li>
+            <b>1. {{ proper_one }}</b>
         </li>
         <li>
-            <img src="{{ right_or_wrong_face }}" alt="proper lighting techniques">
+                <img src="{{ right_or_wrong_face }}" alt="proper lighting techniques">
         </li>
         <li>
-            2. {{ proper_two }}
+            <b>2. {{ proper_two }}</b>
         </li>
         <li>
             <img src="{{ right_or_wrong_way }}" alt="proper camera angle techniques">
         </li>
         <li>
-            3. {{ proper_three }}
+            <b>3. {{ proper_three }}</b>
         </li>
         <li>
             <img src="{{ proper_detection }}" alt="proper camera angle techniques">
         </li>
         <li>
-            4. {{ proper_four }}
+            <b>4. {{ proper_four }}</b>
         </li>
         <li>
             <p>
-
-            </p>
-        </li>
-        <li>
-            <p>
-
+                
             </p>
         </li>
     </ol>
