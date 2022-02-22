@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script type='text/javascript'>
-      window.smartlook||(function(d) {
-        var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
-        var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
-        c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
-        })(document);
-        smartlook('init', 'be2e216922c98c3917c816ae89351b7dc00f3773', { region: 'eu' });
-    </script>
     <link rel="stylesheet" href="static/styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,17 +12,23 @@
     <nav>
         <img src="{{ ADDPlus_icon }}" alt="drowsy_icon">
         <p><a href="/"><strong>Anti-Drowsy Driving Plus (ADD+)</strong></a></p>
+        
         <ul>
             <li><strong><a href="/">Home ▼</a></strong>
             <ul>
-                    <li><strong><a href="/troubleshoot">Troubleshoot</a></strong></li>
-                    <li><strong><a href="/instructions">Instructions</a></strong></li>
-                    <li><strong><a href="/download">Download</a></strong></li>
+                    <li><strong><a href="/#download">Download</a></strong></li>
+                    <li><strong><a href="/#instructions">Instructions</a></strong></li>
+                    <li><strong><a href="/#troubleshoot">Troubleshoot</a></strong></li>                
             </ul>
             </li>
-            <li><strong><a href="/why">Why</a></strong></li>
+            <li><strong><a href="/why">Why ▼</a></strong>
+            <ul>
+                <li><strong><a href="/why">Why</a></strong></li>
+                <li><strong><a href="/why#references">References</a></strong></li>
+            </ul>
+            </li>
             <li><strong><a href="/how">How</a></strong></li>
-            <li><strong><a href="/about">About</a></strong></li>
+            <li><strong><a href="/about">About Me</a></strong></li>
         </ul>
     </nav>
 
@@ -38,21 +36,242 @@
 
     </h4>
     <h1>
-        <span><b>This is my Anti-Drowsy Driving Plus (ADD+) Desktop App</b></span>
+        <span><b>Anti-Drowsy Driving Plus (ADD+): A Desktop App (Drowsiness Detection and Virtual Friend Speech-Robot for Safe Driving)</b></span>
     </h1>
 
-    <div class="home_img">
-        <img src="{{ home_image }}" alt="home_image">
+    <div class="home_body">
+        <div class="home_par">
+            <p>
+                Hi, I am showing how my app works in the <b>following VIDEOS</b>. My app is called Anti-Drowsy Driving Plus (ADD+) App. All the details about my app are on my website (<a href="https://anti-drowsy-driving-plus.herokuapp.com/" target="_blank">https://anti-drowsy-driving-plus.herokuapp.com/</a> ) under different tabs.
+            </p>
+        </div>
+        <div class="home_par">
+            <p>
+                My app detects user’s or driver’s drowsiness by continuously monitoring his/her eyes and mouth in real-time, and sounds an alarm right away when it detects driver’s drowsiness—either when the driver is shutting his eyes and/or yawning. Moreover, when the driver is drowsy, my Virtual Friend Speech-Robot—that I invented using text-to-speech and speech-to-text—suggests the driver to take a break, and also gives an option to the driver if the driver wants to interact, in order to stay awake. Only if the driver says ‘yes’, my Virtual Friend Speech-Robot ask 10 very-short, fun, True/False question-answers and jokes randomly from a long list of 500 question-answers and jokes that I compiled, and also tell the user if they answered right or wrong, and again ask the user if they want more question-answers and jokes. But, instead of saying ‘yes’, if the user says ‘no’ or doesn't say anything, or say something else, my app goes back to drowsiness detection. It’s all in a loop and continues until the user exits the app by pressing ‘e’.
+            </p>
+        </div>
+        <div class="home_par">
+            <p>
+                Drowsy driving is one of the biggest reasons for road accidents and is pretty much equivalent to driving drunk, and my app can solve this serious global issue. According to WHO, road accidents kill 1.35 million people and injure 50 million every year, and it’s the leading cause of death in children and adults aged 5 to 29 years. Data shows that most of the road accidents occur on quiet rural roads and highways, and when the driver is alone in the vehicle. Being alone and not hearing any noises for a long time can make you feel drowsy, and dramatically increase the risk of an accident. So, my app with drowsiness detection and my Virtual Friend Speech-Robot invention will SAVE LIVES by preventing drivers from falling asleep at the wheel.
+            </p>
+        </div>
+        <div class="video1">
+            <div class="video_title">
+                <h2>
+                    ADD+ Version 1.0 Demo: Drowsiness Detection only
+                </h2>
+            </div>
+            <video controls width="1000">
+                <source src="{{ video1 }}"
+                        type="video/mp4">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+        </div>
+        <div class="video2">
+            <div class="video_title">
+                <h2>
+                    ADD+ Version 2.0 Demo: Drowsiness Detection Plus Interaction-Virtual Friend Speech-Robot
+                </h2>
+            </div>
+            <video controls width="1000">
+                <source src="{{ video2 }}"
+                        type="video/mp4">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+        </div>
+        
+        
     </div>
 
-    <div class="home_body">
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim dolor amet reiciendis est molestiae hic quam nisi, necessitatibus accusantium, explicabo, officiis aperiam architecto suscipit odio laboriosam consequatur quod optio corporis.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem provident sapiente velit, modi hic expedita nisi incidunt veritatis, laboriosam nemo necessitatibus facere unde optio voluptatum. Corrupti odio eaque ex reiciendis.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex deleniti veritatis hic, quae id quas? Voluptatibus magnam accusantium ex neque, necessitatibus, molestiae voluptas corporis laboriosam explicabo ducimus vitae hic similique!
-        </p>
+    <h4 id="download">
+
+    </h4>
+    <h1>
+        <span><b>DOWNLOAD</b></span>
+    </h1>
+    <div class="home_img">
+        <img src="{{ download }}" alt="Download image">
+    </div>
+    <div class="download_version_title">
+        <h2>
+            There are two Major Versions of the App:
+        </h2>
     </div>
     
+    <div class="download_body">
+        <div class="version1">
+            <p>
+                Version 1.0 (Online/Offline): Drowsiness Detection only
+            </p>
+        </div>
+        <div class="version2">
+            <p>
+                Version 2.0 (Online): Drowsiness Detection plus Interaction—Virtual Friend Speech-Robot
+            </p>
+        </div>
+        <div class="version2-1">
+            <p>
+                Version 2.1 (Offline): Drowsiness Detection plus Interaction—Virtual Friend Speech-Robot
+            </p>
+        </div>
+        <div class="download_text">
+            <p>Depending on your needs and preferences, download Version 1 or 2 (or both) from the FOLLOWING LINKS.</p>
+        </div>
+        <div class="download_instruction">
+            <p>Download the app following the instructions on the <a href="/#instructions">Instructions page</a></p>
+        </div>
+       <div class="version1link">
+           <p><b>Version 1.0 (Online/Offline): Drowsiness Detection only</b></p>
+            <a href="https://bitbucket.org/jjjjooaa/anti_drowsy_driving/src/main/Anti-Drowsy%20Driving%20Plus%20(ADD%2B)%20Setup%20V1.exe" target="_blank">Download Version 1.0 (Online/Offline) (Windows Only)</a>
+       </div>
+        <div class="version2link">
+            <p><b>Version 2.0 (Online): Drowsiness Detection plus Interaction—Virtual Friend Speech-Robot</b></p>
+            <a href="https://bitbucket.org/jjjjooaa/anti_drowsy_driving/src/main/Anti-Drowsy%20Driving%20Plus%20(ADD%2B)%20Setup%20V2.exe" target="_blank">Download Version 2.0 (Online) (Windows Only)</a>
+        </div>
+        <div class="version3link">
+            <p><b>Version 2.1 (Offline): Drowsiness Detection plus Interaction—Virtual Friend Speech-Robot</b></p>
+            <a href="https://bitbucket.org/jjjjooaa/anti_drowsy_driving/src/main/Anti-Drowsy%20Driving%20Plus%20(ADD%2B)%20Setup%20V2.1.exe" target="_blank">Download Version 2.1 (Offline) (Windows Only)</a>
+        </div>
+
+        <div class="safety_title">
+            <h2>IMPORTANT: Safety Notice</h2>
+        </div>
+
+        <div class="safety_body">
+            <p>
+                There is no alternative, and no technology can replace good sleep for driving purposes. It is good to have technology work for you, but relying 100% on technology, even in a matter of life and death, is not safe because technology may not work or load properly, and may crash or stop working. Therefore, good sleep is recommended, and when you feel tired and sleepy while driving—take a break.
+            </p>
+        </div>
+        
+    </div>
+    
+    <h4 id="instructions">
+
+    </h4>
+    <h1>
+        <span><b>INSTRUCTIONS</b></span>
+    </h1>
+    <div class="instructions_body">
+        <div class="instructions_title">
+            <h2>
+                How to Download App:
+            </h2>
+        </div>
+        <div class="list">
+            <ol>
+                <li>
+                    <p>
+                        1. {{ first }}
+                        <a href="https://anti-drowsy-driving-plus.herokuapp.com/" target="_blank">https://anti-drowsy-driving-plus.herokuapp.com/</a>
+                    </p>
+                    
+                </li>
+                <li>
+                    <p>2. {{ second }}</p>
+                </li>
+                <li>
+                    <p>3. {{ third }}</p>
+                    
+                </li>
+                <li>
+                    <p>4. {{ fourth }}</p>
+                    
+                </li>
+                <li>
+                    <p>5. {{ fifth }}</p>
+                    
+                </li>
+                <li>
+                    <p>6. {{ sixth }}</p>
+                    
+                </li>
+                <li>
+                    <p>7. {{ seventh }}</p>
+                </li>
+
+                <div class="img">
+                    <li>
+                        <div id="windows_defender">
+                            <img src="{{ windows_defender }}" alt="windows_defender">
+                        </div>
+                    </li>
+                </div>
+                              
+                <li>
+                    <p>8. {{ eighth }}</p>
+                </li>
+            </ol>
+        </div>
+        
+        <div class="instructions_title">
+            <h2>How to Use App Properly:</h2>
+        </div>
+        <div class="list">
+            <ol>
+                <li>
+                    <p>
+                        <b>1. {{ proper_one_bold }}</b>
+                        {{ proper_one }}
+                    </p>
+                    
+                </li>
+                <div class="img">
+                    <li>
+                        <img src="{{ right_or_wrong_face }}" alt="proper lighting techniques">
+                    </li>
+                </div>
+                <li>
+                    <p>
+                        <b>2. {{ proper_two_bold }}</b>
+                        {{ proper_two }}
+                    </p>
+                </li>
+                <div class="img">
+                    <li>
+                        <img src="{{ right_or_wrong_way }}" alt="proper camera angle techniques">
+                    </li>
+                </div>
+                
+                <li>
+                    <p>
+                        <b>3. {{ proper_three_bold }}</b>
+                        {{ proper_three }}
+                    </p>
+                </li>
+                <div class="img">
+                    <li>
+                        <img src="{{ proper_detection }}" alt="proper camera angle techniques">
+                    </li>
+                </div>
+                
+                <li>
+                    <p>
+                        <b>4. {{ proper_four_bold }}</b>
+                        {{ proper_four }}
+                    </p>
+                </li>
+            </ol>
+        </div>
+     
+    </div>
+
+    <h4 id="troubleshoot">
+
+    </h4>
+    <h1>
+        <span><b>TROUBLESHOOT</b></span>
+    </h1>
+    <div class="troubleshoot_body">
+        <div class="troubleshoot_title">
+            <h2>Log into your GMAIL account to continue to our email listings and report an issue.</h2>
+        </div>
+        <div class="troubleshoot_link">
+            <h3><a href="https://groups.google.com/g/anti-drowsy-app" target="_blank">Post Issues</a></h3>
+        </div>
+        <div class="img_troubleshoot">
+            <img src="{{ troubleshoot_image }}" alt="screen_repair_troubleshoot">
+        </div>
+    </div>
 
 </body>
 </html>
