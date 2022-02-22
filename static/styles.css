@@ -96,19 +96,20 @@ h1 {
 span {
     display: table-cell;
     vertical-align: middle;
-    font-size: 1.3em;
+    font-size: 1em;
     color: white;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 h4 {
-    padding-top: 100px;
+    padding-top: 70px;
 }
 
 .home_body {
-    padding-left: 400px;
-    padding-right: 400px;
+    /* padding-left: 400px;
+    padding-right: 400px; */
     padding-top: 40px;
-    padding-bottom: 50px;
     font-family: system-ui;
     font-size: 1.1em;
 }
@@ -116,4 +117,120 @@ h4 {
 .home_img {
     padding-top: 55px;
     text-align: center;
+}
+
+.download_body {
+    text-align: center;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-top: 40px;
+    font-family: system-ui;
+}
+
+.troubleshoot_body {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    font-family: system-ui;
+}
+
+.img_troubleshoot {
+    padding-top: 55px;
+}
+
+.troubleshoot_link {
+    padding-top: 40px;
+    font-size: 1.2em;
+}
+
+.troubleshoot_title {
+    font-size: 1.2em;
+}
+
+.instructions_body {
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    font-family: system-ui;
+}
+
+ol li {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ol .img {
+    list-style:none;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.instructions_title {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.download_version_title {
+    padding-top: 40px;
+    text-align: center;
+    font-family: system-ui;
+}
+
+.version2-1 {
+    padding-bottom: 25px;
+}
+
+.download_text {
+    padding-bottom: 25px;
+}
+
+.download_instruction {
+    padding-bottom: 25px;
+}
+
+.version1link {
+    padding-bottom: 25px;
+}
+.version2link {
+    padding-bottom: 25px;
+}
+
+.version3link {
+    padding-bottom: 25px;
+}
+
+.safety_title {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 0.9em;
+}
+
+.safety_body {
+    text-align: left;
+}
+
+.video1 {
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+.video2 {
+    text-align: center;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+.home_par {
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.list li {
+    list-style:none;
 }

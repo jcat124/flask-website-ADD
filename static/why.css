@@ -85,7 +85,7 @@ nav ul li ul li a:hover {
     background-color: rgb(83, 79, 79);
 }
 
-div {
+h1 {
     display: table;
     height: 75px;
     width: 100%;
@@ -96,7 +96,7 @@ div {
 span {
     display: table-cell;
     vertical-align: middle;
-    font-size: 2.5em;
+    font-size: 1.3em;
     color: white;
 }
 
@@ -130,10 +130,74 @@ span {
     border: 2px solid black;
 } */
 
-p {
+/* p {
     padding-left: 400px;
     padding-right: 400px;
     padding-top: 40px;
     padding-bottom: 50px;
     font-style: Arial, sans-serif;
+} */
+
+h4 {
+    padding-top: 70px;
+}
+
+.why_body {
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-top: 40px;
+    /* padding-bottom: 50px; */
+    font-family: system-ui;
+    font-size: 1.1em;
+}
+
+.why_par {
+    padding-bottom: 20px;
+}
+
+.why_list {
+    padding-top: 15px;
+    padding-left: 60px;
+    padding-bottom: 15px;
+}
+
+.why_img {
+    padding-top: 55px;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.ref_par {
+    font-family: system-ui;
+    padding-top: 40px;
+    padding-bottom: 75px;
+    text-align: left;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+.ref_title {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: system-ui;
+    /* padding-top: 40px; */
+}
+
+.blank {
+    padding-bottom: 45px;
+}
+
+.ref_img {
+    /* padding-top: 55px; */
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.ref {
+    padding-bottom: 10px;
+}
+
+.ref_subtitle {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }

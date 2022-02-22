@@ -101,7 +101,7 @@ span {
 }
 
 h4 {
-    padding-top: 100px;
+    padding-top: 70px;
 }
 
 .how_body {
@@ -116,4 +116,38 @@ h4 {
 .how_img {
     padding-top: 55px;
     text-align: center;
+}
+
+.how_par {
+    padding-bottom: 20px;
+    padding-top: 25px;
+}
+
+.how_list {
+    padding-left: 60px;
+}
+
+.how_title {
+    padding-top: 55px;
+    text-align: center;
+}
+
+.how_par_challenge {
+    padding-bottom: 40px;
+}
+
+.how_subhead_challenge {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 1.2em;
+}
+
+.how_subhead {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.how_par_bold {
+    padding-top: 40px;
 }
