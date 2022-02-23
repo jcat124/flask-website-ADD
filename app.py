@@ -18,11 +18,11 @@ def home_page():
     windows_defender = os.path.join(
         app.config['UPLOAD_FOLDER'], 'setup_wizard.png')
     right_or_wrong_face = os.path.join(
-        app.config['UPLOAD_FOLDER'], 'right_or_wrong_face.png')
+        app.config['UPLOAD_FOLDER'], 'light1.png')
     right_or_wrong_way = os.path.join(
-        app.config['UPLOAD_FOLDER'], 'right_or_wrong_way.png')
+        app.config['UPLOAD_FOLDER'], 'tilt.png')
     proper_detection = os.path.join(
-        app.config['UPLOAD_FOLDER'], 'proper_detection.png')
+        app.config['UPLOAD_FOLDER'], 'direction.png')
     first = 'Open the website: '
     second = 'Click on “Home”, then click on “Download”.'
     third = 'Download Version 1.0 (Online/Offline) if you only want Drowsiness Detection.'
