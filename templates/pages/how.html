@@ -67,7 +67,7 @@
                         </p>
 
                         <p>
-                            I taught myself python programming language and learned to make my first app using python.
+                            I taught myself Python programming language and learned to make my first app using Python.
                         </p>
                     </li>
                     <li>
@@ -86,7 +86,7 @@
 
         <div class="how_par">
             <p>
-                I used the following python libraries for my project:
+                I used the following Python libraries for my project:
             </p>
             <div class="how_list">
                 <ul>
@@ -138,13 +138,13 @@
         
         <div class="how_par">
             <p>
-                There are two versions of my app based on user/ driver’s needs and preferences:
+                There are two Major Versions of my app based on user/ driver’s needs and preferences:
             </p>
             <div class="how_list">
                 <ol>
                     <li>
                         <p>
-                            <u>Drowsiness Detection:</u> When the driver is drowsy—either shutting eyes or yawning,
+                            <u>Drowsiness Detection:</u> When the driver is drowsy—either shutting eyes and/or yawning,
                             my app sounds an alarm right away to alert the driver.
                         </p>
                     </li>
@@ -169,7 +169,7 @@
 
         <div class="how_par">
             <p>
-                To do things fast, my code converts webcam video to grayscale because we don’t need color, we only need to track the eyes’ and mouth’s movements. My code then detects face and puts facial landmarks (mouth, nose, eyes, lips) on the user's face, then the facial landmarks (eyes and mouth) are fed in the algorithm. My program also draws green lines around the eyes and mouth to let the user know if they are properly detected, so the user can understand how it works and feel more protected instead of knowing nothing about it.
+                To do things fast (with speed), my code converts webcam video to grayscale because we don’t need color, we only need to track the eyes’ and mouth’s movements. My code then detects face and puts facial landmarks (mouth, nose, eyes, lips) on the user's face, then the facial landmarks (eyes and mouth) are fed in the algorithm. My program also draws green lines around the eyes and mouth to let the user know if they are properly detected, so the user can understand how it works and feel more protected instead of knowing nothing about it.
             </p>
         </div>
 
@@ -178,7 +178,7 @@
                 My code simultaneously monitors the driver’s eyes and mouth,
                 and detects drowsiness by detecting shutting eyes and/or yawning, and alerts the driver
                 right away with an alarm sound. I used the Eye Aspect Ratio (EAR) and Mouth Aspect Ratio (MAR) algorithm [21-23]
-                which gives you real-time numbers that change every millisecond, but then I coded it to detect drowsiness.
+                which gives you real-time numbers that change every millisecond, but then I code it to detect drowsiness.
                 As shown below, the EAR and  MAR algorithm mark 6 points (P₁ to P₆) around the eyes and mouth, and according
                 to the following formula, it calculates the driver’s real-time ‘EAR and MAR values’ every millisecond
                 continuously. These values range from around 0.05 to 0.25 for EAR and around 0.4 to 0.8 for MAR, and it changes
@@ -188,7 +188,7 @@
                 the eyes are close for—if it’s just for a fraction of a second, then it’s blinking, but if it’s closed for
                 longer, that is around 1-3 seconds, then it’s drowsiness. But, there is no timer running alongside, so to
                 know for how long the eyes are closed for, I declared a ‘counter’ variable. The initial ‘counter’ value was 0,
-                and each time a close eye is detected, it increments the ‘counter’ by 1, and when the ‘counter’ value reaches 20
+                and each time a close-eye is detected, it increments the ‘counter’ by 1, and when the ‘counter’ value reaches 20
                 (that is the eyes are closed for 1-3 seconds), it sends out an alert alarm to wake up the driver. In my program,
                 after several rounds of intensive testing, I set a threshold for EAR = 0.2 and a threshold for MAR = 0.9, to
                 accurately detect the drowsiness right away. If EAR < 0.2 threshold continuously for 20 consecutive picture frames,
@@ -214,7 +214,7 @@
 
         <div class="how_par">
             <p>
-                Speech-Robot asks 10 question-answers (Q-A) and jokes one-by-one from the set of 500 fun, interesting question-answers and jokes that I compiled from online [24-35], and let the user know if they answered right or wrong. After that, my Virtual Friend Speech-Robot again asks if the driver wants to interact more—it’s in a loop.
+                I created a Virtual Friend Speech-Robot with speech_recognition and pyttsx3. I used speech_recognition to convert what the user is saying to text (speech-to-text), and pyttsx3 to use the computer speaker to respond and ask (text-to-speech). After sounding an alert alarm when the driver is drowsy, the Virtual Friend Speech-Robot—that I invented—suggests the driver to take a break, have some hot tea/ coffee etc., and also gives an option if the driver wants to talk to the Virtual Friend Speech-Robot to help stay awake. If the driver doesn’t want to interact, it goes back to drowsiness detection; but if the driver wants to interact, my Virtual Friend Speech-Robot asks 10 question-answers (Q-A) and jokes one-by-one from the set of 500 fun, interesting question-answers and jokes that I compiled from online [24-35], and let the user know if they answered right or wrong. After that, my Virtual Friend Speech-Robot again asks if the driver wants to interact more—it’s in a loop.
             </p>
             
         </div>
