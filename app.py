@@ -48,7 +48,7 @@ def home_page():
     video1 = os.path.join(
         app.config['UPLOAD_FOLDER'], 'ADD+_Version1_video.mp4')
     video2 = os.path.join(
-        app.config['UPLOAD_FOLDER'], 'ADD+_video_v2.mp4')
+        app.config['UPLOAD_FOLDER'], 'ADD+_version2.0(online)_video (1).mp4')
     return render_template("index.html", ADDPlus_icon=ADDPlus_icon,
                            home_image=home_image, first=first, second=second, third=third, fourth=fourth,
                            fifth=fifth, sixth=sixth, seventh=seventh, windows_defender=windows_defender,
